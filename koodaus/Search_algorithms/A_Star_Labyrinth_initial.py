@@ -1,10 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
 
-This code is from https://medium.com/@nicholas.w.swift/easy-a-star-pathfinding-7e6689c7f7b2
-Except the Maze is now for the Labyrinth task for Tekniska Museet case
-
-"""
 class Node():
     """A node class for A* Pathfinding"""
 
