@@ -1,0 +1,179 @@
+print(6*int(input())**2)
+
+# mediaanin ja avg laskeminen
+import sys
+import math
+from statistics import median
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+inputs = list(map(int, input().split()))
+
+if len(inputs)%2:
+    print(median(inputs))
+else:
+    print(math.ceil(sum(inputs)/len(inputs)))
+
+a = input()
+b = input()
+l = int(input())
+prog = float(input())
+
+done = math.ceil(prog*l)
+rem = l - done
+
+print(a*done+b*rem)
+
+##################################################
+l = int(input())
+m = int(input())
+n = int(input())
+
+v = l
+a = []
+for _ in range(n):
+    a.append(v)
+    v += m
+print(*a)
+
+v = l
+a = []
+for _ in range(n):
+    a.append(v)
+    v //= m
+print(*a)
+    
+
+########################################################
+n1 = 1
+n2 = 33
+count = n2 + 1
+thislist =[]
+for i in range(count):
+    if(i == 0):
+        continue
+    if(i != 0 and i % 3 == 0):
+        thislist.append("Dope")
+    
+    else:
+        thislist.append(i)
+print(thislist)
+
+
+
+########################################################
+## hakee stringistä ekan ja vikan numeron ########
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+s = list( map(int, [c for c in input()]))
+print(min(s))
+print(max(s))
+
+
+
+#########################################################
+### ensimmäiset ehdot katsovat onko tarvittavaa dataa tarpeeksi###
+### kun tarvittavaa dataa ei ole, tulostetaan ettei laskua voi suorittaa ###
+### jälkimmäisissä ehdoissa pyöritetään yhtälöä, kun on tarvittava muuttuja joilla voi laskea halutun yhtälön#######
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+force = float(input())
+mass = float(input())
+accel = float(input())
+
+if [force, mass, accel].count(0) == 2:
+    print("Not enough information")
+elif [force, mass, accel].count(0) == 3:
+    print("No information")
+elif mass != 0 and accel != 0:
+    print(mass*accel)
+elif force != 0 and accel != 0:
+    print(force/accel)
+elif force != 0 and mass != 0:
+    print(force/mass)
+
+
+############################################################
+#### Jos kerrottava on parillen#############################
+#### Tai jos kerrottava on pariton #########################
+
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+n = int(input())
+if n%2==0:
+    mul = n/2 + 0.5
+    
+else:
+    mul = n//2 + 1
+print(int(n*mul))
+
+
+############################################################
+###kellon aikojen laskuja ##############################
+
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+n = input()
+a = input()
+d = int(input())
+
+h1,m1=map(int,n.split(":"))
+h2,m2=map(int,a.split(":"))
+m1+=60*h1
+m2+=60*h2
+if m1+d>m2:
+    print("LATE")
+else:
+    print("OK")
+
+
+#############################################################
+###### lukujen lisäys samaan stringiin peräkkäin #########3##
+
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+adigit, acount = [int(i) for i in input().split()]
+bdigit, bcount = [int(i) for i in input().split()]
+repeats = int(input())
+for i in  range(repeats):
+    for x in range(acount):
+        print(adigit,end='')
+    for y in range(bcount):
+        print(bdigit,end='')
+    adigit += 1 
+    bdigit += 1 
+    adigit = adigit%10 
+    bdigit = bdigit%10
+
+#################################################################
+##### kirjain pyramidi leveyden ja pituuden avulla ##############
+
+h=int(input())
+w=int(input())
+[print('O'*w)for i in range(h)]
+
+#################################################################
+###### etsitään numerot jotka tasalukuja #######################
+
+n = input()
+print(sum(int(i) for i in n if int(i)%2==0))
